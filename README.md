@@ -41,7 +41,7 @@ To get started with The Elf Zone, follow these steps:
    git checkout -b "<branchname>"
    ```
 4. Solve Advent of Code problems using your preferred programming language. [Advent of Code website](https://adventofcode.com)
-   _In your first commit, create a folder that is just your github username_
+   _In your first commit, create a folder that is just your github username. All your code should go here_
 6. Submit a Pull Request (PR) to the repository, following the guidelines below.
 7. Review and incorporate feedback from the community to improve your solutions.
 8. Share your progress, experiences, and learnings with others in the community.
