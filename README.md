@@ -34,7 +34,7 @@ To get started with The Elf Zone, follow these steps:
 
 1. Clone the repository to your local machine:
  ```shell
-   git clone https://github.com/your-username/the-elf-zone.git
+   git clone https://github.com/sphimmer/elf_zone.git
 ```
 2. Create a branch following this naming convention: `<your-github-username>/whatever-you-want`
 3. Solve Advent of Code problems using your preferred programming language. [Advent of Code website](https://adventofcode.com)
