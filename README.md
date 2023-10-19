@@ -32,14 +32,15 @@ Our primary goals for The Elf Zone are as follows:
 To get started with The Elf Zone, follow these steps:
 
 
-1. Clone your forked repository to your local machine:
+1. Clone the repository to your local machine:
  ```shell
    git clone https://github.com/your-username/the-elf-zone.git
 ```
-2. Solve Advent of Code problems using your preferred programming language. [Advent of Code website](https://adventofcode.com)
-3. Submit a Pull Request (PR) to the repository, following the guidelines below.
-4. Review and incorporate feedback from the community to improve your solutions.
-5. Share your progress, experiences, and learnings with others in the community.
+2. Create a branch following this naming convention: `<your-github-username>/whatever-you-want`
+3. Solve Advent of Code problems using your preferred programming language. [Advent of Code website](https://adventofcode.com)
+4. Submit a Pull Request (PR) to the repository, following the guidelines below.
+5. Review and incorporate feedback from the community to improve your solutions.
+6. Share your progress, experiences, and learnings with others in the community.
 
 ## General Guidelines
 **Respect**: Be respectful and considerate when providing feedback on others' code.
