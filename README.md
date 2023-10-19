@@ -31,7 +31,7 @@ Our primary goals for The Elf Zone are as follows:
 
 To get started with The Elf Zone, follow these steps:
 
-1. Fork this repository to your own GitHub account.
+
 2. Clone your forked repository to your local machine:
  ```shell
    git clone https://github.com/your-username/the-elf-zone.git
