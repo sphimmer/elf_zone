@@ -1,6 +1,5 @@
 # Welcome to The Elf Zone 🎄
 
-![The Elf Zone Logo](elf_zone_logo.png)
 
 ## Table of Contents
 
@@ -37,10 +36,10 @@ To get started with The Elf Zone, follow these steps:
  ```shell
    git clone https://github.com/your-username/the-elf-zone.git
 ```
-3. Solve Advent of Code problems using your preferred programming language.
-4. Submit a Pull Request (PR) to the repository, following the guidelines below.
-5. Review and incorporate feedback from the community to improve your solutions.
-6. Share your progress, experiences, and learnings with others in the community.
+3. Solve Advent of Code problems using your preferred programming language. [Advent of Code website](https://adventofcode.com)
+5. Submit a Pull Request (PR) to the repository, following the guidelines below.
+6. Review and incorporate feedback from the community to improve your solutions.
+7. Share your progress, experiences, and learnings with others in the community.
 
 ## General Guidelines
 **Respect**: Be respectful and considerate when providing feedback on others' code.
