@@ -1,0 +1,90 @@
+# Ignore common editor/IDE files
+**/.vscode/
+**/.idea/
+**/*.sublime-workspace
+**/*.sublime-project
+**/*.suo
+**/*.user
+**/*.sln
+**/*.swp
+
+# Ignore Python-specific files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*.db
+
+# Ignore Node.js specific files
+**/node_modules/
+**/npm-debug.log
+**/yarn-error.log
+
+# Ignore Compiled JavaScript and Source Maps
+**/*.js
+**/*.js.map
+
+# Ignore Java-specific files
+**/*.class
+**/*.jar
+**/*.war
+
+# Ignore C/C++ specific files
+**/*.o
+**/*.out
+**/*.exe
+
+# Ignore Ruby-specific files
+**/*.gem
+**/*.rbc
+**/*.rbo
+**/*.rbs
+**/*.gemspec
+**/coverage/
+**/pkg/
+**/spec/reports/
+**/yaml_db/
+
+# Ignore PHP-specific files
+**/*.log
+**/error_log
+**/access.log
+**/output.log
+**/php_error.log
+**/vendor/
+
+# Ignore Compiled files
+**/*.compiled
+
+# Ignore configuration files
+**/*.conf
+
+# Ignore image files
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+
+# Ignore virtual environment files (Python)
+**/venv/
+**/env/
+**/.venv/
+**/.ENV/
+**/.venv3/
+**/.venv2/
+**/__venv__/
+**/.env/
+
+# Ignore Jupyter Notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Ignore macOS-specific files
+**/.DS_Store
+
+# Ignore system-specific files
+**/Thumbs.db
+
+# Ignore package manager files
+**/composer.lock
+**/yarn.lock
+**/package-lock.json
