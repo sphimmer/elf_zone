@@ -58,6 +58,7 @@ To get started with The Elf Zone, follow these steps:
 
 ## Pull Request (PR) Template
 When submitting a Pull Request (PR) to The Elf Zone, please follow this template:
+```markdown
 **Challenge Name**: Name of the Advent of Code challenge
 
 **Link**: Provide a link to the challenge
@@ -80,6 +81,7 @@ Explain how you've tested your solution and include sample test cases if applica
 
 **Additional Notes**:
 Any additional comments or observations about your code or the challenge.
+```
 
 ## Code of Conduct
 
