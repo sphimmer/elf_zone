@@ -1,0 +1,19 @@
+{
+  "name": "adventofcode-2022",
+  "version": "1.0.0",
+  "description": "advent of code 2022",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.6.2",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "ts-jest": "^29.1.1"
+  }
+}
