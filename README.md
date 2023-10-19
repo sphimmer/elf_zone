@@ -33,9 +33,9 @@ To get started with The Elf Zone, follow these steps:
 
 
 1. Clone the repository to your local machine:
- ```shell
-   git clone https://github.com/sphimmer/elf_zone.git
-```
+   ```shell
+     git clone https://github.com/sphimmer/elf_zone.git
+   ```
 2. Create a branch following this naming convention: `<your-github-username>/whatever-you-want`
    ```shell
    git checkout -b "<branchname>"
