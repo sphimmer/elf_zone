@@ -1,6 +1,3 @@
-import * as fs from 'fs';
-
-
 function arraySum(array: number[]): number {
     return array.reduce((sum, val) => {
         return sum + val;
@@ -60,6 +57,5 @@ export function part2(input: string): number {
         .replace(/eighthree/g, 'eightthree');
     const calibration_values = parseInput(input, regex, combinationFunc);
     
-    fs.writeFileSync('./values.txt', calibration_values.join('\n'))
     return arraySum(calibration_values);
 }
