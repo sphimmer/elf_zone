@@ -1,6 +1,3 @@
-
-
-
 function getFullNumberAndIndexes(line: string[], index:number): {partNumber: string, indexes: number[]} {
     let number: string = '';
     const indexes: number[] = []
