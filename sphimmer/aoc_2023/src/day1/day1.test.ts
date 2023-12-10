@@ -46,7 +46,6 @@ describe('day 1', () => {
         test('input', () => {
            
             const result = part2(input);
-            console.log(result)
             expect(result).toBe(54208);
         })
 
