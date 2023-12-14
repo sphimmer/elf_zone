@@ -49,15 +49,16 @@ describe("day 5", () => {
 
 
         })
+        test("almanac actual input", () => {
+            const almanac = new Almanac(input);
+            expect(almanac.getLowestLocation()).toBe(379811651);
+        })
         test("almanac test input", () => {
             const almanac = new Almanac(testInput);
             expect(almanac.getLowestLocation()).toBe(35);
         })
 
-        test("almanac actual input", () => {
-            const almanac = new Almanac(input);
-            expect(almanac.getLowestLocation()).toBe(379811651);
-        })
+        
         
     })
 
@@ -92,8 +93,11 @@ describe("day 5", () => {
 
         test("overlap", () => {
             const almanac = new A2('');
-            console.log(almanac.getOverlap({start: 5, end: 20}, {start: 7, end: 9}));
-            console.log(almanac.getOverlap({start: 5, end: 8}, {start: 4, end: 6}))
+            expect(almanac.getOverlap({start: 5, end: 20}, {start: 7, end: 9})).toStrictEqual({
+                matched: { start: 7, end: 9 },
+                nonMatched: [ { start: 5, end: 6 }, { start: 10, end: 20 } ]
+              });
+            expect(almanac.getOverlap({start: 5, end: 8}, {start: 4, end: 6})).toStrictEqual({ matched: { start: 5, end: 6 }, nonMatched: [ { start: 7, end: 8 } ] });
         })
     })
 });

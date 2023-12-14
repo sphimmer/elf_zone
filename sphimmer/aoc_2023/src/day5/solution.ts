@@ -80,7 +80,6 @@ export class Almanac {
             lowest = seed.location <= lowest ? seed.location : lowest;
             lowestLocationSeed = seed.location <= lowest ? seed: lowestLocationSeed;
         })
-        console.log(lowestLocationSeed);
         return lowest;
         
     }
