@@ -14,22 +14,6 @@ export const Cards: Record<string, number>  = {
     'A': 14,
 }
 
-export const CardsV2: Record<string, number>  = {
-    '2': 2,
-    '3': 3,
-    '4': 4,
-    '5': 5,
-    '6': 6,
-    '7': 7,
-    '8': 8,
-    '9': 9,
-    'T': 10,
-    'J': 1,
-    'Q': 12,
-    'K': 13,
-    'A': 14,
-}
-
 export const Hands: Record<string, number> = {
     '5': 21,        // 5 of a kind
     '41': 20,       // 4 of a kind
@@ -48,7 +32,7 @@ export interface Play {
 }
 
 export function evaluateHand(hand: string, jIsJoker = false){
-    let handComp = {};
+    let handComp: Record<string,number>  = {};
     hand.split('').map(card => {
         if(handComp[card]) {
             handComp[card]++;
@@ -90,10 +74,7 @@ export function parseInput(input: string): Play[] {
     return plays;
 }
 
-export function sortHands(handA: Play, handB: Play, CardPoints: Record<string, number>, jIsJoker = false) {
-
-    handA.handValue = evaluateHand(handA.hand, jIsJoker);
-    handB.handValue = evaluateHand(handB.hand, jIsJoker);
+export function sortHands(handA: Play, handB: Play, jIsJoker = false) {
     if (handA.handValue > handB.handValue) {
         return 1;
     }
@@ -102,10 +83,10 @@ export function sortHands(handA: Play, handB: Play, CardPoints: Record<string, n
     }
     if(handA.handValue == handB.handValue){
         for (let c = 0; c < handA.hand.length; c++) {
-            if(CardPoints[handA.hand[c]] > CardPoints[handB.hand[c]]) {
+            if(Cards[handA.hand[c]] > Cards[handB.hand[c]]) {
                 return 1
             }
-            if(CardPoints[handA.hand[c]] < CardPoints[handB.hand[c]]) {
+            if(Cards[handA.hand[c]] < Cards[handB.hand[c]]) {
                 return -1
             }
         }
@@ -114,9 +95,12 @@ export function sortHands(handA: Play, handB: Play, CardPoints: Record<string, n
 
 export function solution(input: string, part: 1 | 2){
     const plays = parseInput (input);
-    const cardPoints = part == 1 ? Cards : CardsV2;
+    Cards['J'] = part == 1 ? 11 : 1;
     const jIsJoker = part == 2;
-    plays.sort((a: Play, b: Play) => sortHands(a, b, cardPoints, jIsJoker));
+    plays.map(play => {
+        play.handValue = evaluateHand(play.hand, jIsJoker);
+    })
+    plays.sort((a: Play, b: Play) => sortHands(a, b, jIsJoker));
 
     let winnings = 0;
     
