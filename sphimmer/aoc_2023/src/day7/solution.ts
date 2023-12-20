@@ -8,7 +8,7 @@ export const Cards: Record<string, number>  = {
     '8': 8,
     '9': 9,
     'T': 10,
-    'J': 11,
+    'J': 11, // value is 1 if its a joker/wild
     'Q': 12,
     'K': 13,
     'A': 14,

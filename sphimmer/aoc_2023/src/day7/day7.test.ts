@@ -71,8 +71,5 @@ describe("day 7", () =>{
             expect(evaluateHand('JJJJJ', true)).toBe(21);
             expect(evaluateHand('JJ2JJ', true)).toBe(21);
         })
-
-        
-
     })
 })
