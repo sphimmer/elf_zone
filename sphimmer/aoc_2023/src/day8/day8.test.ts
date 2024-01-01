@@ -1,5 +1,5 @@
 import { input } from "./input";
-import { parseInput, part1 } from "./solution";
+import { DesertMap, followMap, getPart2StartingNodes, parseInput, part1 } from "./solution";
 
 const testInput1 = `RL
 
@@ -17,7 +17,16 @@ AAA = (BBB, BBB)
 BBB = (AAA, ZZZ)
 ZZZ = (ZZZ, ZZZ)`;
 
+const testInput3 = `LR
 
+11A = (11B, XXX)
+11B = (XXX, 11Z)
+11Z = (11B, XXX)
+22A = (22B, XXX)
+22B = (22C, 22C)
+22C = (22Z, 22Z)
+22Z = (22B, 22B)
+XXX = (XXX, XXX)`;
 describe('day 8', () => {
 
     describe('part 1', () => {
@@ -45,5 +54,33 @@ describe('day 8', () => {
                 expect(result).toBe(12169);
             })
         });
+    })
+
+    describe('part 2', () => {
+        test('starting nodes', () => {
+            const nodes = getPart2StartingNodes(new DesertMap(testInput3));
+            expect(nodes.length).toBe(2);
+        })
+
+        // test('test input', () => {
+        //     const result = part2(testInput3);
+        //     expect(result).toBe(6);
+        // })
+
+        // test('actual input', () => {
+        //     const result = part2(input);
+        //     expect(result).toBe(6);
+        // })
+
+        test('starting Nodes actual input', () => {
+            const nodes = getPart2StartingNodes(new DesertMap(input));
+            console.log(nodes.length);
+        })
+
+        test('followMap', () => {
+            const map = new DesertMap(input);
+            const r = followMap(map, getPart2StartingNodes(map))
+            console.log(r);
+        })
     })
 })
